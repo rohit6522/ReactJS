@@ -6,6 +6,7 @@ import Counter from "./components/Counter";
 import Student from "./components/Student";
 import College from "./components/College";
 import Wrapper from "./components/Wrapper";
+import Effect from "./components/Effect";
 
 export default function App() {
   const [fruit, setFruit] = useState("Apple");
@@ -56,6 +57,7 @@ export default function App() {
       </Wrapper>
 
       <Counter />
+      <Effect />
 
       <h3 className="text-xl font-bold">{fruit}</h3>
       <button
