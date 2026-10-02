@@ -8,6 +8,8 @@ export default function CheckBoxes(){
 
     if(event.target.checked){
       setSkills([...skills,event.target.value])
+    }else{
+      setSkills([skills.filter((item)=>item!=event.target.value)])
     }
   }
 
