@@ -6,6 +6,7 @@ import Card from "./components/card";
 import Student from "./components/Student";
 import College from "./components/College";
 import Wrapper from "./components/Wrapper";
+import CheckBoxes from "./components/CheckBoxes";
 // import Effect from "./components/Effect";
 
 export default function App() {
@@ -160,6 +161,8 @@ export default function App() {
 
         </section>
 
+        <h1>Handle checkBox</h1>
+          <CheckBoxes />
       </div>
     </div>
   );
