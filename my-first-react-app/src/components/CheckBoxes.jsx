@@ -5,13 +5,17 @@ export default function CheckBoxes(){
   const [skills,setSkills] = useState([])
   const handleSkills=()=>{
     console.log(event.target.value,event.target.checked);
+
+    if(event.target.checked){
+      setSkills(event.target.value)
+    }
   }
 
 
   return(
     <div>
       <h3>Select Your Skills</h3>
-      
+
       <input onChange={handleSkills} type="checkbox" id="java" value='java'/>
       <label htmlFor="java">java</label>
       <br />
