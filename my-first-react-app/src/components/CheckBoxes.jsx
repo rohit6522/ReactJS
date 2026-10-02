@@ -7,7 +7,7 @@ export default function CheckBoxes(){
     console.log(event.target.value,event.target.checked);
 
     if(event.target.checked){
-      setSkills(event.target.value)
+      setSkills([...skills,event.target.value])
     }
   }
 
