@@ -9,7 +9,7 @@ export default function CheckBoxes(){
     if(event.target.checked){
       setSkills([...skills,event.target.value])
     }else{
-      setSkills([skills.filter((item)=>item!=event.target.value)])
+      setSkills([...skills.filter((item)=>item!=event.target.value)])
     }
   }
 
@@ -22,15 +22,15 @@ export default function CheckBoxes(){
       <label htmlFor="java">java</label>
       <br />
 
-      <input onChange={handleSkills} type="checkbox" id="java" value='py'/>
+      <input onChange={handleSkills} type="checkbox" id="py" value='py'/>
       <label htmlFor="py">Python</label>
       <br />
 
-      <input onChange={handleSkills} type="checkbox" id="java" value='c'/>
+      <input onChange={handleSkills} type="checkbox" id="c" value='c'/>
       <label htmlFor="c">C</label>
       <br />
 
-      <input onChange={handleSkills} type="checkbox" id="sql" value='java'/>
+      <input onChange={handleSkills} type="checkbox" id="sql" value='sql'/>
       <label htmlFor="sql">SQl</label>
 
       <h1>{skills.toString()}</h1>
