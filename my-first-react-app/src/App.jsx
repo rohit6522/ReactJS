@@ -8,6 +8,7 @@ import College from "./components/College";
 import Wrapper from "./components/Wrapper";
 import CheckBoxes from "./components/CheckBoxes";
 import Radio from "./components/Radio";
+import MapFunction from "./components/MapFunction";
 // import Effect from "./components/Effect";
 
 export default function App() {
@@ -15,9 +16,9 @@ export default function App() {
   const [student, setStudent] = useState();
   // const [value, setValue] = useState("Rohit Kumar");
 
-  const [name,setName] = useState('');
-  const[password,setPassword] = useState('');
-  const[email,setEmail]=useState('');
+  const [name, setName] = useState('');
+  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState('');
 
 
   const handleFruit = () => {
@@ -145,14 +146,14 @@ export default function App() {
 
           <h1>Controlled Components</h1>
           <form action="" method="get">
-            <input type="text" onChange={(event)=>setName(event.target.value)} placeholder="Enter Name" />
+            <input type="text" onChange={(event) => setName(event.target.value)} placeholder="Enter Name" />
             <br />
-            <input type="password" onChange={(event)=>setPassword(event.target.value)} placeholder="Enter Ur Pass" />
+            <input type="password" onChange={(event) => setPassword(event.target.value)} placeholder="Enter Ur Pass" />
             <br />
-            <input type="email" onChange={(event)=>setEmail(event.target.value)} placeholder="Enter ut Emai;" /> <br />
+            <input type="email" onChange={(event) => setEmail(event.target.value)} placeholder="Enter ut Emai;" /> <br />
 
             <button >Submit</button> <br />
-            <button onClick={()=>{setEmail('');setName('');setPassword('')}}>clear</button>
+            <button onClick={() => { setEmail(''); setName(''); setPassword('') }}>clear</button>
 
 
             <h3>{name}</h3>
@@ -163,9 +164,11 @@ export default function App() {
         </section>
 
 
-          <CheckBoxes />
+        <CheckBoxes />
 
         <Radio />
+
+        <MapFunction />
       </div>
 
 
