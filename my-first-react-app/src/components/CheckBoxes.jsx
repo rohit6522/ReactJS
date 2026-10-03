@@ -16,6 +16,8 @@ export default function CheckBoxes(){
 
   return(
     <div>
+      <hr />
+              <h1>Handle checkBox</h1>
       <h3>Select Your Skills</h3>
 
       <input onChange={handleSkills} type="checkbox" id="java" value='java'/>

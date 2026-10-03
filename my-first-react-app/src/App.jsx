@@ -162,7 +162,7 @@ export default function App() {
 
         </section>
 
-        <h1>Handle checkBox</h1>
+
           <CheckBoxes />
 
         <Radio />
