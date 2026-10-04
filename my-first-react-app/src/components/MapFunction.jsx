@@ -48,6 +48,7 @@ export default function MapFunction() {
           ))}
         </tbody>
       </table>
+      <hr />
     </div>
   );
 }
