@@ -9,6 +9,7 @@ import Wrapper from "./components/Wrapper";
 import CheckBoxes from "./components/CheckBoxes";
 import Radio from "./components/Radio";
 import MapFunction from "./components/MapFunction";
+import ReuseComp from "./components/ReuseComp";
 // import Effect from "./components/Effect";
 
 export default function App() {
@@ -169,6 +170,8 @@ export default function App() {
         <Radio />
 
         <MapFunction />
+        <ReuseComp />
+
       </div>
 
 
