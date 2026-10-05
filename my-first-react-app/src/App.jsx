@@ -40,6 +40,7 @@ export default function App() {
   };
 
   const collegeName = ["IET", "LPU", "CU"];
+  const [color, setColor] = useState('red');
 
   return (
     <div className="min-h-screen bg-gray-100 p-6">
@@ -48,7 +49,14 @@ export default function App() {
         <h2 className="rounded-xl bg-gray-800 px-6 py-4 text-center text-4xl font-bold text-white">
           Props in React
         </h2>
-        <Clock />
+
+        <select  onChange={(event) => setColor(event.target.value)}>
+          <option value="red">Red</option>
+          <option value="green">Green</option>
+          <option value="gray">Gray</option>
+          <option value="yellow">Yellow</option>
+        </select>
+        <Clock color={color} />
 
         <section className="rounded-xl bg-white p-6 shadow-md">
           <h3 className="mb-4 text-2xl font-bold text-gray-800">
