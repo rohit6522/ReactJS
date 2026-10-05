@@ -10,6 +10,7 @@ import CheckBoxes from "./components/CheckBoxes";
 import Radio from "./components/Radio";
 import MapFunction from "./components/MapFunction";
 import ReuseComp from "./components/ReuseComp";
+import Clock from "./components/Clock";
 // import Effect from "./components/Effect";
 
 export default function App() {
@@ -47,6 +48,7 @@ export default function App() {
         <h2 className="rounded-xl bg-gray-800 px-6 py-4 text-center text-4xl font-bold text-white">
           Props in React
         </h2>
+        <Clock />
 
         <section className="rounded-xl bg-white p-6 shadow-md">
           <h3 className="mb-4 text-2xl font-bold text-gray-800">
