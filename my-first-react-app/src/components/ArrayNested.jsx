@@ -1,5 +1,4 @@
 
-
 export default function NestedLoop() {
   const collegeData = [
     {
@@ -69,16 +68,39 @@ export default function NestedLoop() {
 
       ]
     },
-
   ]
   return (
     <div>
-      <h1>Nested Looping</h1>
+      <h1>Array Nested Looping with component</h1>
+      <hr />
       {
-        collegeData.map((college,index)=>{
-          <div key={index}>
-            <h1>Name: {college.name}</h1>
-          </div>
+        collegeData.map((college, index) => {
+          return (
+            <div key={index}>
+              <h1>Name: {college.name}</h1>
+
+              <ul>
+                <li>
+                  <h3>City :{college.city}</h3>
+                </li>
+                <li>
+                  <h3>Website: {college.website}</h3>
+                </li>
+
+            
+                <li>
+                  <h3>Students:</h3>
+                  {college.Student.map((student, index) => (
+                    <div key={index}>
+                      Name: {student.name}
+                    </div>
+                  ))}
+                </li>
+                <hr />
+
+              </ul>
+            </div>
+          )
         })
       }
     </div>
