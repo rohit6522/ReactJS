@@ -12,6 +12,7 @@ import MapFunction from "./components/MapFunction";
 import ReuseComp from "./components/ReuseComp";
 import Clock from "./components/Clock";
 // import Effect from "./components/Effect";
+import ArrayNested from "./components/ArrayNested"
 
 export default function App() {
   const [fruit, setFruit] = useState("Apple");
@@ -181,6 +182,8 @@ export default function App() {
 
         <MapFunction />
         <ReuseComp />
+
+        <ArrayNested />
 
       </div>
 
